@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-/*background animation based off of Divinector on youtube 254,243,246 */
+
 body{
-  	background: linear-gradient(160deg,#5E38F7, #3384E4, #87FAD7);
+  background-color:black;
   margin: auto;
 display: block;
 padding: 30px;
@@ -21,7 +21,7 @@ h2{
   padding: 10px;
   text-align: center;
   font-family: 'Pacifico', cursive;
-  font-size: 45px;
+  font-size: 55px;
   color: white;
 }
 p {
@@ -43,7 +43,7 @@ p.info {
   margin: auto;
 }
 .animation-area {
-
+	background: linear-gradient(160deg,#5E38F7, #3384E4, #87FAD7);
 	width: 100%;
 	height: 100vh;
 }
@@ -61,7 +61,7 @@ p.info {
 	list-style: none;
 	width: 25px;
 	height: 25px;
-	background: rgba(254,243,246, 0.4);
+	background: rgba(255, 255, 255, 0.2);
 	animation: animate 20s linear infinite;
 	bottom: -150px;
 }
