@@ -43,8 +43,8 @@ function drawHill() {
     let x = map(i, 0, spectrum.length / 6, width / 4, width);
     let flippedX = map(i, 0, spectrum.length / 2, width / 2, 0);
     let size = map(spectrum[i], 0, 255, 0, height / 0.5 * 0.3);
-    noStroke();
-    fill(0, 25, 0);
+    stroke(59,22,236);
+    fill(172,156,245);
     rect(x, height - size, 2, size);
     rect(flippedX, height - size, 5, size);
   }
@@ -58,7 +58,8 @@ function drawWater() {
   let spectrum = fft.analyze();
 
   for (let i = 0; i < waveform.length; i++) {
-    fill(0, 0, 255);
+    fill(195,255,247);
+    stroke(141,255,229);
 
     let x = map(i, 0, waveform.length, 0, width);
     let y = map(waveform[i], -1, 1, height, height / 2);
@@ -75,9 +76,9 @@ function drawSun() {
   let waveform = fft.waveform();
   let spectrum = fft.analyze();
 
-  let size = map(level, 0, 1, 0, width * 2);
-
-  fill(255, 0, 0);
+  let size = map(level, 0, 1, 0, width * 0.5);
+  stroke(245,156,230);
+  fill(232,165,255);
   circle(width / 2, width / 4, size);
 
 }
