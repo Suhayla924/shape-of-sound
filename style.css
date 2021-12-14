@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-body{
-  background-color:black;
+body {
+  background: linear-gradient(to left, #5E38F7, #3384E4, #87FAD7);
   margin: auto;
-display: block;
-padding: 30px;
+  display: block;
+  padding: 30px;
 }
-h1{
-  margin: auto;
-  padding: 10px;
-  text-align: center;
-  font-family: 'Pacifico', cursive;
-  font-size: 55px;
-  color: white;
-}
-h2{
+
+h1 {
   margin: auto;
   padding: 10px;
   text-align: center;
@@ -24,6 +16,16 @@ h2{
   font-size: 55px;
   color: white;
 }
+
+h2 {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 55px;
+  color: white;
+}
+
 p {
   width: 50%;
   text-align: center;
@@ -37,85 +39,97 @@ p {
   font-size: 30px;
   color: white;
 }
+
 p.info {
   padding-left: 0%;
   text-align: center;
   margin: auto;
 }
+
 .animation-area {
-	background: linear-gradient(160deg,#5E38F7, #3384E4, #87FAD7);
-	width: 100%;
-	height: 100vh;
+  background: transparent;
+  width: 100%;
+  height: 100vh;
 }
+
 .box-area {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+
 .box-area li {
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 25px;
-	height: 25px;
-	background: rgba(255, 255, 255, 0.2);
-	animation: animate 20s linear infinite;
-	bottom: -150px;
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
 }
+
 .box-area li:nth-child(1) {
-	left: 86%;
+  left: 86%;
   height: 50px;
   width: 100px;
   border-radius: 50%;
-	animation-delay: 0s;
+  animation-delay: 0s;
 }
+
 .box-area li:nth-child(2) {
-	left: 12%;
+  left: 12%;
   height: 50px;
   width: 100px;
   border-radius: 50%;
-	animation-delay: 1.5s;
-	animation-duration: 10s;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
 }
+
 .box-area li:nth-child(3) {
-	left: 70%;
+  left: 70%;
   height: 50px;
   width: 100px;
   border-radius: 50%;
-	animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
+
 .box-area li:nth-child(4) {
-	left: 42%;
+  left: 42%;
   height: 50px;
   width: 100px;
   border-radius: 50%;
-	animation-delay: 0s;
-	animation-duration: 15s;
+  animation-delay: 0s;
+  animation-duration: 15s;
 }
+
 .box-area li:nth-child(5) {
-	left: 65%;
+  left: 65%;
   height: 50px;
   width: 100px;
   border-radius: 50%;
-	animation-delay: 0s;
+  animation-delay: 0s;
 }
+
 .box-area li:nth-child(6) {
-	left: 15%;
+  left: 15%;
   height: 50px;
   width: 100px;
   border-radius: 50%;
-	animation-delay: 3.5s;
+  animation-delay: 3.5s;
 }
+
 @keyframes animate {
-	0% {
-		transform: translateY(0) rotate(0deg);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(-700px) rotate(360deg);
-		opacity: 0;
-	}
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-700px) rotate(360deg);
+    opacity: 0;
+  }
 }
