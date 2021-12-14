@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+body{
+  background-color:black;
+  margin: auto;
+display: block;
+padding: 20px;
+}
+h1{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+p {
+  width: 50%;
+  max-width: 75%;
+  font-weight: 500;
+  padding: 0px;
+  padding-left: 25%;
+  padding-bottom: 20px;
+  line-height: 150%;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+p.info {
+  padding-left: 0%;
+  text-align: center;
+  margin: auto;
+}
