@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 10);
+  background(255,0);
 
   drawSun();
   drawSun2();
@@ -77,7 +77,7 @@ function drawWater2() {
   let spectrum = fft.analyze();
 
   for (let i = 0; i < waveform.length; i++) {
-    fill(195,255,247);
+    fill(51,132,228);
     stroke(141,255,229);
 
     let x = map(i, 0, waveform.length, 0, width);

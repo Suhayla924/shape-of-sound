@@ -16,6 +16,14 @@ h1{
   font-size: 45px;
   color: white;
 }
+h2{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+  color: white;
+}
 p {
   width: 50%;
   text-align: center;
