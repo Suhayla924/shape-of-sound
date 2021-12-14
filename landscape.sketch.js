@@ -18,8 +18,10 @@ function draw() {
   background(255, 10);
 
   drawSun();
+  drawSun2();
   drawHill();
   drawWater();
+  drawWater2();
 
 }
 
@@ -68,6 +70,24 @@ function drawWater() {
 
 
 }
+function drawWater2() {
+  //data from song stored in variables
+  let level = amp.getLevel();
+  let waveform = fft.waveform();
+  let spectrum = fft.analyze();
+
+  for (let i = 0; i < waveform.length; i++) {
+    fill(195,255,247);
+    stroke(141,255,229);
+
+    let x = map(i, 0, waveform.length, 0, width);
+    let y = map(waveform[i], -1, 1, height, height / 0.25);
+    circle(x, y, 30);
+  }
+
+
+}
+
 
 function drawSun() {
 
@@ -76,9 +96,22 @@ function drawSun() {
   let waveform = fft.waveform();
   let spectrum = fft.analyze();
 
-  let size = map(level, 0, 1, 0, width * 0.5);
-  stroke(245,156,230);
-  fill(232,165,255);
+  let size = map(level, 0, 1, 0, width * 1.25);
+  stroke(35,105,255);
+  fill(211,247,255);
+  circle(width / 2, width / 4, size);
+
+}
+function drawSun2() {
+
+  //data from song stored in variables
+  let level = amp.getLevel();
+  let waveform = fft.waveform();
+  let spectrum = fft.analyze();
+
+  let size = map(level, 0, 1, 0, width * 0.3);
+  stroke(255,35,105);
+  fill(245,156,186);
   circle(width / 2, width / 4, size);
 
 }
